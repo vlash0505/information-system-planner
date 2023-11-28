@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="550.0" prefHeight="500.0"
+           prefWidth="700.0" style="-fx-background-color: #aeb2b5;" xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="mytimeorganizer.controllers.authentication.SignInController">
+
+    <AnchorPane maxHeight="380.0" maxWidth="550.0" minHeight="300.0" minWidth="400.0" prefHeight="380.0"
+                prefWidth="550.0" StackPane.alignment="CENTER">
+
+        <StackPane.margin>
+            <Insets/>
+        </StackPane.margin>
+        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="220.0" layoutY="15.0" opacity="0.5"
+                   pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../assets/signup/app_logo.png"/>
+        </ImageView>
+
+        <TextField fx:id="signInUsernameField" layoutX="180.0" layoutY="140.0" maxHeight="25.0" maxWidth="200.0"
+                   minHeight="25.0" minWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Username"/>
+
+        <PasswordField fx:id="signInPasswordField" layoutX="180.0" layoutY="180.0" maxHeight="25.0" maxWidth="200.0"
+                       minHeight="25.0" minWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Password"/>
+
+        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="150.0" layoutY="140.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../assets/user_64.png"/>
+        </ImageView>
+
+        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="150.0" layoutY="185.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../assets/password.png"/>
+        </ImageView>
+
+        <JFXButton layoutX="242.0" layoutY="265.0" maxHeight="25.0" maxWidth="60.0" minHeight="25.0" minWidth="60.0"
+                   onAction="#onSignIn" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #3ca6e8;"
+                   text="Sign In" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+
+        <Text layoutX="196.0" layoutY="358.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Not signed up yet? Sign up " wrappingWidth="155"/>
+
+        <Hyperlink layoutX="339.0" layoutY="342.0" onAction="#onSignUpHere" text="here."/>
+        <Text fx:id="signInErrorMessageText" fill="RED" layoutX="150.0" layoutY="322.0" opacity="0.5"
+              strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="240.0000457763672"/>
+
+    </AnchorPane>
+</StackPane>

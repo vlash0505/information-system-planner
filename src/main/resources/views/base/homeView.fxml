@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+           prefWidth="700.0" style="-fx-background-color: #aeb2b5;" xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytimeorganizer.controllers.navigation.HomeController">
+    <VBox maxWidth="150.0" minWidth="150.0" prefHeight="500.0" prefWidth="150.0"
+          style="-fx-background-color: #899ba1;" StackPane.alignment="CENTER_LEFT">
+        <StackPane.margin>
+            <Insets/>
+        </StackPane.margin>
+        <JFXButton onAction="#onHomeButton" prefHeight="40.0" prefWidth="150.0"
+                   style="-fx-background-color: #3ca6e8;" text="Home" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton onAction="#onPlanButton" prefHeight="40.0" prefWidth="150.0"
+                   style="-fx-background-color: #3ca6e8;" text="Plan" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton onAction="#onGoalsButton" prefHeight="40.0" prefWidth="150.0"
+                   style="-fx-background-color: #3ca6e8;" text="Goals" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton onAction="#onTimerButton" prefHeight="40.0" prefWidth="150.0"
+                   style="-fx-background-color: #3ca6e8;" text="Timer" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton onAction="#onJournalingButton" prefHeight="40.0" prefWidth="150.0"
+                   style="-fx-background-color: #3ca6e8;" text="Journaling" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <JFXButton onAction="#onAchievementsButton" prefHeight="40.0" prefWidth="150.0"
+                   style="-fx-background-color: #3ca6e8;" text="Achievements" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <Hyperlink alignment="BOTTOM_CENTER" maxHeight="78.0" onAction="#onLogOutHyperlink" prefHeight="20.0"
+                   prefWidth="60.0" text="Log Out" textFill="WHITE">
+            <VBox.margin>
+                <Insets left="40.0" top="100.0"/>
+            </VBox.margin>
+        </Hyperlink>
+    </VBox>
+    <AnchorPane fx:id="contentArea" maxWidth="550.0" prefHeight="200.0" prefWidth="550.0">
+        <StackPane.margin>
+            <Insets left="150.0"/>
+        </StackPane.margin>
+    </AnchorPane>
+</StackPane>

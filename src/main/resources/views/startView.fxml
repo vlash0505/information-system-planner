@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #aeb2b5;"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="mytimeorganizer.controllers.plan.StartController">
+    <ImageView fitHeight="44.0" fitWidth="48.0" layoutX="67.0" layoutY="36.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../assets/goals/goal.png"/>
+    </ImageView>
+    <Text fill="WHITE" layoutX="191.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Your tasks for today :">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Text>
+    <ScrollPane layoutX="64.0" layoutY="108.0" prefHeight="337.0" prefWidth="422.0">
+        <VBox fx:id="todayTasksVBox" prefHeight="334.0" prefWidth="404.0"/>
+    </ScrollPane>
+</AnchorPane>

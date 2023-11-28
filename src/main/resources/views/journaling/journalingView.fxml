@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+           prefWidth="550.0" style="-fx-background-color: #aeb2b5;" xmlns="http://javafx.com/javafx/17"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="mytimeorganizer.controllers.journaling.JournalingController">
+    <AnchorPane maxHeight="500.0" maxWidth="558.0" minHeight="497.0" minWidth="549.0" prefHeight="497.0"
+                prefWidth="549.0" StackPane.alignment="CENTER">
+        <StackPane.margin>
+            <Insets/>
+        </StackPane.margin>
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+        <ImageView fitHeight="68.0" fitWidth="44.0" layoutX="88.0" layoutY="31.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../../assets/pencil.png"/>
+        </ImageView>
+        <DatePicker fx:id="datePicker" layoutX="88.0" layoutY="134.0" promptText="Pick date"/>
+        <TextArea fx:id="textArea" layoutX="88.0" layoutY="218.0" maxWidth="400.0" minWidth="400.0"
+                  prefHeight="200.0" prefWidth="400.0" promptText="Take note." style="-fx-max-width: 400;"/>
+        <JFXButton layoutX="400.0" layoutY="42.0" onAction="#onUpdateNotesButton"
+                   style="-fx-background-color: #3ca6e8;" text="Update notes" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </JFXButton>
+        <Text fill="#7b6d6d" layoutX="176.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Take notes every day.">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Text>
+        <Line endX="321.5999755859375" endY="-7.62939453125E-6" layoutX="174.0" layoutY="87.0" startX="-100.0"
+              stroke="#7b6d6d"/>
+        <Line endX="-91.60005187988281" endY="355.8000183105469" layoutX="132.0" layoutY="117.0"
+              startX="-91.60005187988281" startY="-93.00000762939453" stroke="#7b6d6d"/>
+        <Line endX="-91.60005187988281" endY="355.8000183105469" layoutX="607.0" layoutY="116.0"
+              startX="-91.60005187988281" startY="-93.00000762939453" stroke="#7b6d6d"/>
+    </AnchorPane>
+</StackPane>

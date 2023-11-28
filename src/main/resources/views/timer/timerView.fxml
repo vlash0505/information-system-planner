@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="550.0" style="-fx-background-color: #aeb2b5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mytimeorganizer.controllers.timer.TimerController">
+   <children>
+      <ImageView fitHeight="55.0" fitWidth="45.0" layoutX="57.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/timer/timer.png" />
+         </image>
+      </ImageView>
+      <MenuButton layoutX="419.0" layoutY="42.0" mnemonicParsing="false" text="Time">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#setTimerAtOneMinute" text="1 minute" />
+          <MenuItem mnemonicParsing="false" onAction="#setTimerAtFiveMinute" text="5 minutes" />
+            <MenuItem mnemonicParsing="false" onAction="#setTimerAtTenMinutes" text="10 minutes" />
+            <MenuItem mnemonicParsing="false" onAction="#setTimerAtTwentyFiveMinutes" text="25 minutes" />
+        </items>
+      </MenuButton>
+      <Text fx:id="textArea" layoutX="196.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="158.13677978515625" />
+      <Text fill="#7b6d6d" layoutX="254.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Line endX="239.39996337890625" endY="-7.62939453125E-6" layoutX="263.0" layoutY="93.0" startX="-185.40003967285156" startY="-7.62939453125E-6" stroke="WHITE" />
+      <JFXButton layoutX="102.0" layoutY="261.0" onAction="#onStartTimerButton" style="-fx-background-color: #3ca6e8;" text="Start" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="249.0" layoutY="261.0" onAction="#onStopTimerButton" style="-fx-background-color: #3ca6e8;" text="Stop" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="378.0" layoutY="261.0" onAction="#onResetTimerButton" style="-fx-background-color: #3ca6e8;" text="Reset" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
